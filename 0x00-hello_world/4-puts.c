@@ -8,7 +8,7 @@
 int main(void)
 {
 	char *sentence;
-	sentence = "Programming is like building a multilingual puzzle";
+	sentence = "\"Programming is like building a multilingual puzzle";
 
 	puts(sentence);
 	return (0);
