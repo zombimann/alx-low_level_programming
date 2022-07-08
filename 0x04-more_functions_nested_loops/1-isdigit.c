@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _isupper - Checks for a digit
+ * _isdigit - Checks for a digit
  * @c: The number to be checked
  *
  * Return: 1 if the number is a digit. 0 otherwise
