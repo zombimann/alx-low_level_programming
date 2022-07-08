@@ -15,3 +15,21 @@ int _isupper(char c)
 	else
 		return (0);
 }
+
+/**
+ * main - Entry point
+ *
+ * Return: zero for successful operation
+ */
+
+int main(void)
+{
+	char c;
+
+	c = 'A';
+	printf("%c: %d\n", c, _isupper(c));
+	c = 'a';
+	printf("%c: %d\n", c, _isupper(c));
+	return (0);
+}
+
