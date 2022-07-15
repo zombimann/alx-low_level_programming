@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/**
+ * print_rev - prints a string in reverse, followed by a newline
+ * @s: the input string
+ *
+ * Return: nothing
+ */
+
+void print_rev(char *s)
+{
+	int n;
+
+	n = 0;
+	while(*s++ != '\0')
+		n++;
+	while(n-- >= -1)
+		putchar(*s--);
+	putchar('\n');
+}
