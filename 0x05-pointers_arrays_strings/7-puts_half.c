@@ -14,8 +14,11 @@ void puts_half(char *str)
 	len = i = 0;
 	while (*(++str) != '\0')
 		len++;
-	n = len - (len - 1) / 2;
-	while (i++ < n)
+	if (len % 2 == 0)
+		n = len / 2;
+	else
+		n = len - (len + 1) / 2;
+	while (i++ <= n)
 		str--;
 	while (n++ <= len)
 		printf("%c", *str++);
