@@ -12,12 +12,12 @@ void puts_half(char *str)
 	int len, n, i;
 
 	len = i = 0;
-	while (*str++ != '\0')
+	while (*(++str) != '\0')
 		len++;
 	n = len - (len - 1) / 2;
 	while (i++ < n)
 		str--;
 	while (n++ <= len)
-		printf("%c",*str++);
+		printf("%c", *str++);
 	putchar('\n');
 }
