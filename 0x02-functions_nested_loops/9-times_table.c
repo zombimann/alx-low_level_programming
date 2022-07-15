@@ -24,8 +24,7 @@ void times_table(void)
 			{
 				if ((r * c) > 9 && c < 9)
 				{
-					_putchar ('0' + (r * c) / 10);
-					_putchar ('0' + (r * c) % 10);
+					multi_digit(r, c);
 					_putchar (',');
 					_putchar (' ');
 				}
@@ -38,8 +37,7 @@ void times_table(void)
 				}
 				if ((r * c) > 9 && c == 9)
 				{
-					_putchar ('0' + (r * c) / 10);
-					_putchar ('0' + (r * c) % 10);
+					multi_digit(r, c);
 				}
 				if ((r * c) <= 9 && c == 9)
 				{
@@ -50,4 +48,16 @@ void times_table(void)
 		}
 		_putchar ('\n');
 	}
+}
+
+/**
+ * multi_digit - prints out values for values with more than one digit
+ *
+ * Return: Nothing
+ */
+
+void multi_digit(int r, int c)
+{
+	_putchar ('0' + (r * c) / 10);
+	_putchar ('0' + (r * c) % 10);
 }
