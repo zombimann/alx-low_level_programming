@@ -52,6 +52,8 @@ void times_table(void)
 
 /**
  * multi_digit - prints out values for values with more than one digit
+ * @r: the row number
+ * @c: the column number
  *
  * Return: Nothing
  */
