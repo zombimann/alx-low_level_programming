@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
- * _strcat - appends src string to the dest string, overwriting ther terminal null and adding a terminal null
+ * _strncat - appends src string to the dest string, overwriting ther terminal null and adding a terminal null
  * @dest: The string whose length is to be added
- * @src: the string to be appended to the dest string
+ * @src: The string to be appended to the dest string
+ * @n: Length of tring to be appended
  *
  * Return: A pointer to the resulting string dest
  */
