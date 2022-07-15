@@ -38,9 +38,9 @@ void times_table(void)
 				}
 				if ((r * c) > 9 && c == 9)
                                 {
-                                        _putchar ('0' + (r * c) / 10);
-                                        _putchar ('0' + (r * c) % 10);
-                                }
+					_putchar ('0' + (r * c) / 10);
+					_putchar ('0' + (r * c) % 10);
+				}
 				if ((r * c) <= 9 && c == 9)
 				{
 					_putchar (' ');
