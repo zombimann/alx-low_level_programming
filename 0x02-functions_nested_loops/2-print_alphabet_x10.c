@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void print_alphabet_x10 - Prints the lowercase alphabet 10 times followed by a newline
+ * print_alphabet_x10 - Prints the lowercase alphabet 10 times then a \n
  *
  * Return: nothing
  */
@@ -17,6 +17,6 @@ void print_alphabet_x10(void)
 		alph = 'a';
 		while(alph <= 'z')
 			_putchar (alph++);
-		_putchar('\n');
+		_putchar ('\n');
 	}
 }
