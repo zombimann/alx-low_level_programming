@@ -11,3 +11,6 @@ void times_table(void);
 void multi_digit(int r, int c);
 int add(int, int);
 void print_to_98(int);
+void comma_and_space(void);
+void print_it(int);
+void print_times_table(int n);
