@@ -9,7 +9,7 @@
 
 void rev_string(char *s)
 {
-	int n;
+	int n, i;
 	char *temp;
 
 	n = 0;
@@ -19,12 +19,20 @@ void rev_string(char *s)
 		n++;
 	}
 
-	while (--n >= 0)
+	i = 0;
+	while (i++ < n)
 		*temp++ = *(--s);
-	while (--n >= 0)
+	i = 0;
+	while (i++ < n)
 		--temp;
-	while(--n >= 0)
+	i = 0;
+	while (i++ < n)
 		*(s++) = *(temp++);
 
-	printf("%s\n", temp);
+	i = 0;
+	while (i++ < n)
+	{
+		s--;
+		temp--;
+	}
 }
