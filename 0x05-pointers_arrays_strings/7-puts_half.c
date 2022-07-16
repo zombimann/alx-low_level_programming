@@ -26,7 +26,7 @@ void puts_half(char *str)
 	i = len+1;
 	while (i-- > n)
 		str--;
-	while (i++ < len)
+	while (++i < len)
 		printf("%c", *str++);
 	putchar('\n');
 }
