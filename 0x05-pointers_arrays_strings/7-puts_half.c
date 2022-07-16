@@ -23,7 +23,7 @@ void puts_half(char *str)
 	else
 		n = (len - 1) / 2;
 	/*printf("%d\n",n);*/
-	i = len+1;
+	i = len + 1;
 	while (i-- > n)
 		str--;
 	while (++i < len)
