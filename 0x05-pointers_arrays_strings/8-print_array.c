@@ -10,10 +10,12 @@
 
 void print_array(int *a, int n)
 {
-	int arr_size, i;
+	int i;
 
-	arr_size = (sizeof(a) / sizeof(*a));
-	while (n <= arr_size && i++ < n)
-		printf("%d", *a++);
+	/*arr_size = (sizeof(a) / (8*sizeof(*a))) - 1;*/
+	/*while (n <= arr_size && i++ < n)*/
+	i = 0;
+	while (i++ < n)
+		printf("%d, ", *a++);
 	putchar('\n');
 }
