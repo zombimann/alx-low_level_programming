@@ -8,3 +8,4 @@ char *string_toupper(char *);
 char *cap_string(char *);
 int is_lower (char c);
 int is_sep (char c);
+char *leet(char *);

@@ -18,7 +18,7 @@ char *cap_string(char *s)
 		prev = *s;
 		s++;
 		if (is_sep(prev) && is_lower(*s))
-		    *(s) = *(s) - 32;
+			*(s) = *(s) - 32;
 		i++;
 	}
 
