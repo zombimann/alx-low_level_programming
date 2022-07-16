@@ -15,7 +15,12 @@ void print_array(int *a, int n)
 	/*arr_size = (sizeof(a) / (8*sizeof(*a))) - 1;*/
 	/*while (n <= arr_size && i++ < n)*/
 	i = 0;
-	while (i++ < n)
-		printf("%d, ", *a++);
+	while (i < n)
+	{
+		printf("%d", *a++);
+		if (i != n - 1)
+			printf(", ");
+		i++;
+	}
 	putchar('\n');
 }
