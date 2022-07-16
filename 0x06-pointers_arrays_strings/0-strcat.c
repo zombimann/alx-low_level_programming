@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * _strcat - appends src string to the dest string, overwriting the \0 and adding a \0
+ * _strcat - appends src string to the dest string
  * @dest: The string whose length is to be added
  * @src: the string to be appended to the dest string
  *
