@@ -9,27 +9,28 @@
 
 void _print_rev_recursion(char *s)
 {
-	print (s);
+	int n;
+
+	n = 1;
+	while (*s++ != '\0')
+		n++;
+	print (s, n);
 	_putchar ('\n');
 }
 
 /**
  * print - does the actual printing and uses recursion
  * @s: The string to be printed
+ * @n: index
  *
  * Return: nothing
  */
 
-void print(char *s)
+void print(char *s, int n)
 {
-	int n;
-
-	n = 0;
-	while (*s++ != '\0')
-		n++;
-	if (n <= 0)
+	/* go back to zero, printing every character*/
+	if (n-- <= 0)
 		return;
-	n--;
 	_putchar(*s--);
-	print(s--);
+	print(s--, n);
 }
