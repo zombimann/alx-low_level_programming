@@ -11,9 +11,8 @@ void _print_rev_recursion(char *s)
 {
 	int n;
 
-	n = 1;
-	while (*s++ != '\0')
-		n++;
+	n = move_to_end(s);
+	/*_putchar(*s);*/
 	print (s, n);
 	_putchar ('\n');
 }
@@ -33,4 +32,19 @@ void print(char *s, int n)
 		return;
 	_putchar(*s--);
 	print(s--, n);
+}
+
+/**
+ * move_to_end - advances the pointer to the end of the string
+ * @s: the input string
+ *
+ * Return: the final index
+ */
+
+int move_to_end(char *s)
+{
+	if (*s++ != '\0')
+		return (1 + move_to_end(s++));
+	else
+		return (0);
 }
