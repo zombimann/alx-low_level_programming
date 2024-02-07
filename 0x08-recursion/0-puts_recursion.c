@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * void_puts_recursion - puts a astring followed by a new line
+ * _puts_recursion - puts a astring followed by a new line
  * @s: input string
  *
  * Return: nothing
